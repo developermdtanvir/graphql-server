@@ -22,7 +22,7 @@ async function connectToMongoDB() {
     }
 }
 
-const db = client.db('graphql');
+const db = client.db('bistro');  // TODO: replace database name graphql
 const userCollection = db.collection('user');
 
 
