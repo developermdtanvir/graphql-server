@@ -1,7 +1,7 @@
-const {userCollection} = require('./../db/index')
-const resolvers = {
+const {userCollection} = require('./../../db')
+module.exports = {
     Query:{
-        hello:()=> 'Hello World',
+        // hello:()=> 'Hello World',
         Ur:async()=>{
             const query = {}
             const result = await userCollection.find(query).toArray()
@@ -10,4 +10,3 @@ const resolvers = {
     }
 }
 
-module.exports = resolvers

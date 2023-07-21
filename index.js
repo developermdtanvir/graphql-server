@@ -2,7 +2,7 @@ const express = require('express');
 const {connectToMongoDB} = require('./db/index');
 const cors = require('cors');
 const userRoute = require('./route/userRoute')
-const {ApolloServer,gql} = require('apollo-server-express')
+const {ApolloServer} = require('apollo-server-express')
 const typeDefs = require('./gql/schema')
 const resolvers = require('./gql/resolver')
 
