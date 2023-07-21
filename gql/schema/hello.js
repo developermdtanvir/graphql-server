@@ -3,4 +3,6 @@ module.exports = gql`
     extend type  Query{
         hello:String
     }
+
+
 `
