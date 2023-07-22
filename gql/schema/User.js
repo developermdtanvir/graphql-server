@@ -11,17 +11,4 @@ module.exports = gql`
         Ur:[UserReturn]
     }
 
-    input book{
-        name:String
-        email:String
-    }
-    type Book {
-        _id:ID
-        name:String
-        email:String
-    }
-
-    extend type Mutation{
-        storeBook(input:book):Book
-    }
 `

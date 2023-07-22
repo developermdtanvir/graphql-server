@@ -7,12 +7,7 @@ module.exports = {
             const result = await userCollection.find(query).toArray()
             return result
         },
-        Mutation:{
-            storeBook:async(_,req) =>{
-                console.log(req)
-            }
-        }
-        
+              
     }
 }
 
